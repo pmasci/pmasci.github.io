@@ -13,22 +13,65 @@
     <meta name="description" content="Paolo Masci">
     <meta name="author" content="Paolo Masci">
 
+    <style>
+        .profile-pic {
+            max-width: 120px;
+        }
+        .card {
+            padding-top: 40px;
+        }
+        .padding-bottom {
+            height: 400px;
+        }
+        .list-group-item:hover {
+            background-color: gainsboro;
+        }
+        div {
+            text-align: justify;
+        }
+        #bio {
+            background-color: #ebe8e8;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 
-<body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
-<style>
-.profile-pic {
-    max-width: 120px;
-}
-div {
-    text-align: justify;
-}
-</style>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="44" tabindex="0">
+
+<nav id="navbar" class="navbar navbar-dark bg-dark px-3 py-1 fixed-top">
+    <a class="navbar-brand" href="#"><h5><b>Paolo Masci</b> &bull; Senior Research Scientist &bull; NIA/NASA LaRC</h5></a>
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link btn-sm" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-sm" href="#bio">Bio</a></li>
+        <li class="nav-item"><a class="nav-link btn-sm" href="#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link btn-sm" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link btn-sm" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link btn-sm" href="#refereeing">Refereeing</a></li>
+    </ul>
+</nav>
+
 <div class="content">
-    <div class="card">
-        <div class="card-body">
+
+    <div class="card" id="contact">
+        <div class="card-body mb-5">
+            <h5 class="card-title">Contact Information</h5>
+            <p class="card-text px-4">
+                Paolo Masci<br>
+                Senior Research Scientist<br>
+                Formal Methods Group<br>
+                National Institute of Aerospace (NIA)<br>
+                NASA Langley Research Center, B1230-R250-C21<br>
+                Hampton, VA, 23681-2199, USA<br>
+                Email: paolo.masci@nianet.org<br>
+                Orcid: <a href="http://orcid.org/0000-0002-0667-7763" target=_blank>0000-0002-0667-7763</a><br>
+                Scopus: <a href="http://www.scopus.com/inward/authorDetails.url?authorID=55633702700&partnerID=MN8TOARS" target=_blank>55633702700</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="card" id="bio">
+        <div class="card-body mb-5">
             <h5 class="card-title">Biography</h5>
             <div class="row g-0">
                 <div class="col">
@@ -38,19 +81,19 @@ div {
                     His expertise is on modeling and verification of human-machine interfaces for safety-critical systems.
                     Prior to joining NIA/NASA LaRC, he developed his career in various universities and research institutions, including the University of Pisa (Italy), Queen Mary University of London (UK), and University of Minho (Portugal). 
 
-                    For many years, he has been working in close collaboration with medical device manufacturers, hospitals, and medical device regulatory authorities, to carry out applied research on medical devices, e.g., see his publications on <a href="https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-software-safety-research-fda" target=_blank>infusion pump software research</a> carried out in collaboration with the FDA's Center for Devices and Radiological Health.
+                    Since 2010, he has been working in close collaboration with medical device manufacturers, hospitals, and medical device regulatory authorities, to carry out applied research on medical devices, e.g., see his publications on <a href="https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-software-safety-research-fda" target=_blank>infusion pump software research</a> carried out in collaboration with the FDA's Center for Devices and Radiological Health.
                     </p>
                 </div>
                 <div class="col-2 px-4">
-                    <img src="masci.png" class="img-fluid rounded-start profile-pic" alt="Paolo Masci">
+                    <img src="masci.png" class="img-fluid img-thumbnail profile-pic shadow-sm p-1 bg-body rounded" alt="Paolo Masci">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Prizes and Awards</h5>
+    <div class="card" id="awards">
+        <div class="card-body mb-5">
+            <h5 class="card-title">Awards</h5>
             <div class="px-4">
                 <p class="card-text">
                     <li><a href="https://www.aami.org/detail-pages/press-release/aami-s-best-of-bi-t-awards-recognizes-journal-authors" target=_blank>AAMI's Best BI&amp;T Research Paper Prize (2020)</a>, won for the research article <a href="https://pubmed.ncbi.nlm.nih.gov/31162965/" target=_blank>User Interface Software Errors in Medical Devices: Study of U.S. Recall Data</a></li>
@@ -61,24 +104,8 @@ div {
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Contact Information</h5>
-            <p class="card-text px-4">
-                Paolo Masci<br>
-                Senior Research Scientist<br>
-                Formal Methods Group<br>
-                NASA Langley Research Center, B1230-R250-C21<br>
-                Hampton, VA, 23681-2199, USA<br>
-                Email: paolo.masci@nianet.org<br>
-                Orcid: <a href="http://orcid.org/0000-0002-0667-7763" target=_blank>0000-0002-0667-7763</a><br>
-                Scopus: <a href="http://www.scopus.com/inward/authorDetails.url?authorID=55633702700&partnerID=MN8TOARS" target=_blank>55633702700</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-body">
+    <div class="card" id="research">
+        <div class="card-body mb-5">
             <h5 class="card-title">Current Research Interests</h5>
             <p class="card-text px-4">
                 <b>Rapid prototyping of interactive cockpit display systems using formal methods tools</b><br>
@@ -91,59 +118,100 @@ div {
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
+    <div class="card" id="publications">
+        <div class="card-body mb-5">
             <h5 class="card-title">Publications</h5>
             <p class="card-text">
-                The full list of Paolo Masci's academic publications are available on 
+                Paolo Masci has published 100+ peer reviewed articles over the past ten years. The full list of publications is available on 
                 <a href="https://scholar.google.pt/citations?user=iCsd0J0AAAAJ&hl=en" target=_blank>Google Scholar</a>
                 and
                 <a href="http://www.scopus.com/inward/authorDetails.url?authorID=55633702700&partnerID=MN8TOARS" target=_blank>Scopus</a>
-                
             </p>
             <p class="card-text">
-                <b>Favorite Articles</b>
+                <b>Recent Papers</b>
                 <div class="px-4">
-                    <li>
+                    <li class="list-group-item">
                         <a href="https://doi.org/10.2345/0890-8205-55.4.132" target=_blank>Usability Engineering Recommendations for Next-Gen Integrated Interoperable Medical Devices</a>
-                        , P Masci, S Weininger
-                        , Biomedical Instrumentation &amp; Technology 55 (4), 132-142, 2021
+                        <br> P Masci, S Weininger
+                        <br> Biomedical Instrumentation &amp; Technology 55 (4), 132-142, 2021
                     </li>
-                    <li>
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.1093/iwcomp/iwab012" target=_blank>Balancing the formal and the informal in user-centred design</a>
+                        <br> MD Harrison, P Masci, JC Campos
+                        <br> Interacting with Computers 33 (1), 55-72, 2021
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.1007/978-3-030-54994-7_1" target=_blank>Experiences with Streamlining Formal Methods Tools</a>
+                        <br> P Masci
+                        <br> FM 2019 Workshops, Lecture Notes in Computer Science, vol 12232, 2020
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.1145/3404199" target=_blank>Supporting the analysis of safety critical user interfaces: An exploration of three formal tools</a>
+                        <br> JC Campos, C Fayollas, MD Harrison, C Martinie, P Masci, P Palanque
+                        <br> ACM Transactions on Computer-Human Interaction (TOCHI), vol 27 (5), 1-48, 2020
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.1007/s10270-019-00754-9" target=_blank>A framework for FMI-based co-simulation of human-machine interfaces</a>
+                        <br> M Palmieri, C Bernardeschi, P Masci
+                        <br> Software and Systems Modeling, vol 19 (3), 601-623, 2020
+                    </li>
+                    <li class="list-group-item">
                         <a href="https://doi.org/10.1007/978-3-030-50995-8_9" target=_blank>A Graphical Toolkit for the Validation of Requirements for Detect and Avoid Systems</a>
-                        , P Masci, CA Muñoz
-                        , Intl. Conference on Tests and Proofs (TAP), Springer LNCS, vol 12165, 155-166, 2020
+                        <br> P Masci, CA Muñoz
+                        <br> Intl. Conference on Tests and Proofs (TAP), Springer LNCS, vol 12165, 155-166, 2020
                     </li>
-                    <li>
-                        <a href="https://doi.org/10.4204/EPTCS.310.5" target=_blank>An Integrated Development Environment for the Prototype Verification System</a>
-                        , P Masci, CA Muñoz
-                        , F-IDE Workshop, EPTCS, vol 310, 35-49, 2019
+                </div><br>
+                <b>Favorite Analysis Papers</b>
+                <div class="px-4 py-2">
+                    <li class="list-group-item pub">
+                        <a href="https://doi.org/10.2345/0890-8205-55.4.132" target=_blank>Usability Engineering Recommendations for Next-Gen Integrated Interoperable Medical Devices</a>
+                        <br> P Masci, S Weininger
+                        <br> Biomedical Instrumentation &amp; Technology 55 (4), 132-142, 2021
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         <a href="https://doi.org/10.2345/0899-8205-53.3.182" target=_blank>User Interface Software Errors in Medical Devices: Study of U.S. Recall Data</a>
-                        , Y Zhang, P Masci, P Jones, H Thimbleby
-                        , Biomedical Instrumentation &amp; Technology 53 (3), 182-194, 2019
+                        <br> Y Zhang, P Masci, P Jones, H Thimbleby
+                        <br> Biomedical Instrumentation &amp; Technology 53 (3), 182-194, 2019
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         <a href="https://doi.org/10.1007/978-3-642-54804-8_14" target=_blank>Formal Verification of Medical Device User Interfaces Using PVS</a>
-                        , P Masci, Y Zhang, P Jones, P Curzon, H Thimbleby
-                        , ETAPS/FASE, Lecture Notes in Computer Science, Springer 8411, 2014
+                        <br> P Masci, Y Zhang, P Jones, P Curzon, H Thimbleby
+                        <br> ETAPS/FASE, Lecture Notes in Computer Science, Springer 8411, 2014
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         <a href="https://doi.org/10.1145/2494603.2480302" target=_blank>Verification of interactive software for medical devices: PCA infusion pumps and FDA regulation as an example</a>
-                        , P Masci, P Curzon, M Harrison, A Ayoub, I Lee, H Thimbleby
-                        , ACM SIGCHI Symposium on Engineering Interactive Computing Systems, 81--90, 2013
+                        <br> P Masci, P Curzon, M Harrison, A Ayoub, I Lee, H Thimbleby
+                        <br> ACM SIGCHI Symposium on Engineering Interactive Computing Systems, 81--90, 2013
+                    </li>
+                </div>
+                <br>
+                <b>Favorite Tool Papers</b>
+                <div class="px-4 py-2">
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.1007/978-3-030-50995-8_9" target=_blank>A Graphical Toolkit for the Validation of Requirements for Detect and Avoid Systems</a>
+                        <br> P Masci, CA Muñoz
+                        <br> Intl. Conference on Tests and Proofs (TAP), Springer LNCS, vol 12165, 155-166, 2020
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.4204/EPTCS.310.5" target=_blank>An Integrated Development Environment for the Prototype Verification System</a>
+                        <br> P Masci, CA Muñoz
+                        <br> F-IDE Workshop, EPTCS, vol 310, 35-49, 2019
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://doi.org/10.1007/978-3-319-21690-4_30" target=_blank>PVSio-web 2.0: Joining PVS to Human-Computer Interaction</a>
+                        <br> P Masci, P Oladimeji, Y Zhang, P Jones, P Curzon, H Thimbleby
+                        <br> 27th International Conference on Computer Aided Verification (CAV), Springer LNCS, vol 9206, pp 470-478, 2015
                     </li>
                 </div>
             </p>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
+    <div class="card" id="refereeing">
+        <div class="card-body mb-5">
             <h5 class="card-title">Paper Refereeing</h5>
             <p class="card-text">
-                <b>Reviewer (Journals)</b>
+                <b>Journals</b>
                 <div class="px-4">
                     <li>Journal of Systems and Software</li>
                     <li>Interacting with Computers</li>
@@ -153,7 +221,7 @@ div {
                     <li>IEEE Transactions on Human-Machine Systems</li>
                     <li>Innovations in Systems and Software Engineering</li>
                 </div><br>
-                <b>PC Member / Reviewer (Conferences + Workshops)</b>
+                <b>Conferences + Workshops</b>
                 <div class="px-4">
                     <li>SEFM, International Conference on Software Engineering and Formal Methods (2020)</li>
                     <li>SummerSim, Summer Simulation Multi-Conference (2020)</li>
@@ -163,15 +231,12 @@ div {
                     <li>F-IDE, Workshop on Formal Integrated Development Environment (2015 -- today)</li>
                     <li>CoSim-CPS, Workshop on Formal Co-Simulation of Cyber-Physical Systems (2017 -- today)</li>
                     <li>Overture, Workshop on New Applications for Model-based Systems Engineering (2017 -- today)</li>
-                </div><br>
-                <b>PC Co-Chair / Organizer</b>
-                <div class="px-4">
-                    <li>F-IDE, Workshop on Formal Integrated Development Environment (2015 -- today)</li>
-                    <li>CoSim-CPS, Workshop on Formal Co-Simulation of Cyber-Physical Systems (2017 -- today)</li>
                 </div>
             </p>
         </div>
     </div>
+
+    <div class="padding-bottom"></div>
 
 </div>
 
